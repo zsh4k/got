@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ruta="archive/refs/heads/main.zip"
+
+echo "El primer parámetro es: $1/$ruta"
+
+repo=$1/$ruta
+
+echo "$repo"
+
+wget $repo
+
+echo "Descarga lista"
+unzip main.zip
+
+rm main.zip
+
+echo "Descompresion lista"
+
+find . -type d -name "*-main" -exec bash -c 'for dirpath; do mv "$dirpath" "${dirpath%-main}"; done' bash {} +
