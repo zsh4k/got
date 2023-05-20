@@ -7,7 +7,7 @@ Linux basado en debian
 Ser usuario root
 
 ## Instalacion
-
+Copia el siguiente codigo en tu terminal y tendras got instalado
 ```bash
 cd /usr/bin && wget https://raw.githubusercontent.com/zsh4k/got/main/got && chmod +x got && cd
 ```
@@ -30,3 +30,10 @@ got https://github.com/git/git
 ```
 
 Asi bajamos git desde github sin tener git 
+
+## Desinstalar got
+No tengo idea de por que querrias desinstalar esta maravilla pero aun asi...
+
+```bash
+rm -rf /usr/bin/got
+```
