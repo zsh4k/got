@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ -z "$1" ]; then
+  echo "ERROR: No se ha proporcionado un directorio para descargar el repo."
+  exit 1
+fi
+
 ruta="archive/refs/heads/main.zip"
 
 repo=$1/$ruta
