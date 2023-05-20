@@ -2,11 +2,9 @@
 
 ruta="archive/refs/heads/main.zip"
 
-echo "El primer parámetro es: $1/$ruta"
-
 repo=$1/$ruta
 
-echo "$repo"
+echo "Bajando el repo: $repo"
 
 wget $repo
 
