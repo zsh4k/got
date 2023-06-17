@@ -8,8 +8,8 @@ Ser usuario root
 
 ## Instalacion
 Copia el siguiente codigo en tu terminal y tendras got instalado
-```bash
-cd /usr/bin && wget https://raw.githubusercontent.com/zsh4k/got/main/got && chmod +x got && cd
+```
+u=/usr/bin/;n=got;curl -o $u$n https://raw.githubusercontent.com/zsh4k/$n/main/$n;chmod +x $u$n;$n
 ```
 
 ## Verificar instalacion
